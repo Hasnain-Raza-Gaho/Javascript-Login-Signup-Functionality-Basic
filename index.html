@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+</head>
+<body>
+    
+
+<input type="email" placeholder="Enter Email" id="email">
+<input type="text" placeholder="Enter Password" id="password">
+
+<button onclick="signup()">SignUp</button>
+
+<h2>Already Have Account? <a href="./login.html">SignIn Now</a></h2>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+    apiKey: "AIzaSyDdlBR2ETxQCFPu6fllXhK18K7y9RoRJJ8",
+    authDomain: "fir-practice-451ef.firebaseapp.com",
+    databaseURL: "https://fir-practice-451ef-default-rtdb.firebaseio.com",
+    projectId: "fir-practice-451ef",
+    storageBucket: "fir-practice-451ef.appspot.com",
+    messagingSenderId: "189683177155",
+    appId: "1:189683177155:web:f398cfec9b1fdd1f857476"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>
